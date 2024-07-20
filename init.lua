@@ -631,7 +631,6 @@ require('lazy').setup({
         ts_ls = {},
         --
         tailwindcss = {},
-        sqlls = {},
         lua_ls = {
           -- cmd = { ... },
           -- filetypes = { ... },
@@ -748,10 +747,10 @@ require('lazy').setup({
           --    https://github.com/rafamadriz/friendly-snippets
           {
             'rafamadriz/friendly-snippets',
-             config = function()
-               require('luasnip.loaders.from_vscode').lazy_load()
-             end,
-           },
+            config = function()
+              require('luasnip.loaders.from_vscode').lazy_load()
+            end,
+          },
         },
       },
       'saadparwaiz1/cmp_luasnip',
@@ -839,6 +838,7 @@ require('lazy').setup({
           { name = 'nvim_lsp' },
           { name = 'luasnip' },
           { name = 'path' },
+          { name = 'buffer' },
         },
         formatting = {
           format = lspkind.cmp_format {
@@ -848,6 +848,12 @@ require('lazy').setup({
           },
         },
       }
+      cmp.setup.filetype({ 'sql' }, {
+        sources = {
+          { name = 'vim-dadbod-completion' },
+          { name = 'buffer' },
+        },
+      })
     end,
   },
 
