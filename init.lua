@@ -835,7 +835,6 @@ require('lazy').setup({
             group_index = 0,
           },
           { name = 'copilot' },
-          { name = 'nvim_lua' },
           { name = 'nvim_lsp' },
           { name = 'luasnip' },
           { name = 'path' },
