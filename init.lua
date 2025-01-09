@@ -720,10 +720,12 @@ require('lazy').setup({
         --
         -- You can use 'stop_after_first' to run the first available formatter from the list
         -- javascript = { "prettierd", "prettier", stop_after_first = true },
-        javascript = { "prettierd", "prettier", stop_after_first = true },
+        javascript = { 'prettierd', 'prettier', stop_after_first = true },
         css = { { 'prettierd', 'prettier' } },
         scss = { { 'prettierd', 'prettier' } },
         json = { { 'prettierd', 'prettier' } },
+        yml = { 'prettierd', 'prettier', stop_after_first = true },
+        cs = { 'omnisharp', 'csharpier', stop_after_first = true },
       },
     },
   },
