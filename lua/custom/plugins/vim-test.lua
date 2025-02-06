@@ -1,4 +1,4 @@
-return {
+local M = {
   'vim-test/vim-test',
   dependencies = {
     'preservim/vimux',
@@ -7,5 +7,9 @@ return {
   -- vim.keymap.set('n', '<leader>a', ':TestSuite<CR>'),
   -- vim.keymap.set('n', '<leader>l', ':TestLayiwCR<CR>'),
   -- vim.keymap.set('n', '<leader>g', ':TestVisit<CR>'),
-  vim.cmd "let test#strategy = 'vimux'",
 }
+M.config = function()
+  vim.cmd "let test#strategy = 'vimux'"
+end
+
+return M
