@@ -726,6 +726,7 @@ require('lazy').setup({
         json = { 'prettierd', 'prettier', stop_after_first = true },
         yml = { 'prettierd', 'prettier', stop_after_first = true },
         cs = { 'omnisharp', 'csharpier', stop_after_first = true },
+        go = { 'gofumpt', 'gofmt', stop_after_first = true },
       },
     },
   },
