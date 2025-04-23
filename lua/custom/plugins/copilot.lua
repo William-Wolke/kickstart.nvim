@@ -4,6 +4,7 @@ return {
   lazy = true,
   cmd = 'Copilot',
   event = 'InsertEnter',
+  enabled = false,
   config = function()
     require('copilot').setup {
       panel = { enabled = false },
