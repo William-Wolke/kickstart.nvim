@@ -10,11 +10,11 @@ return {
     opts = {
       debug = false, -- Enable debugging
       -- See Configuration section for rest
-    },
-    mappings = {
-      reset = {
-        normal = '<C-r>',
-        insert = '<C-r>',
+      mappings = {
+        reset = {
+          normal = '<C-r>',
+          insert = '<C-r>',
+        },
       },
     },
   },
