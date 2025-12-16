@@ -1,4 +1,4 @@
-local toggle_key = '<C-.>'
+local toggle_key = '<M-,>'
 return {
   'coder/claudecode.nvim',
   dependencies = { 'folke/snacks.nvim' },
@@ -29,9 +29,10 @@ return {
       ---@module "snacks"
       ---@type snacks.win.Config|{}
       snacks_win_opts = {
-        position = 'float',
-        width = 0.9,
-        height = 0.9,
+        position = 'bottom',
+        height = 0.4,
+        width = 1.0,
+        border = 'single',
         keys = {
           claude_hide = {
             toggle_key,
