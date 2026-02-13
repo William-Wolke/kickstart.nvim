@@ -29,9 +29,9 @@ return {
       ---@module "snacks"
       ---@type snacks.win.Config|{}
       snacks_win_opts = {
-        position = 'bottom',
-        height = 0.4,
-        width = 1.0,
+        position = 'right',
+        height = 1,
+        width = 0.4,
         border = 'single',
         keys = {
           claude_hide = {
